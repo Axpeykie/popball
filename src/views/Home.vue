@@ -75,15 +75,7 @@ export default defineComponent({
         radius: 30
       }
     ])
-    const account = 0
-    const r = 0
-    const d = 2 * r
 
-    const h = window.innerHeight
-    const w = window.innerWidth
-    if (d * d * account > w * h || d >= w || d >= h) {
-      console.log('not enough!')
-    }
     const globalObj: { [key: string]: Ball } = {}
 
     const show = ref<Boolean>(false)
@@ -240,7 +232,6 @@ export default defineComponent({
                 i += 1
                 continue
               }
-              console.log('boom!!!')
               const radBoom = validFloat(newAtan(y2 - y1, x2 - x1))
               const mRadBoom = radBoom + Math.PI / 2
 
