@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <div>123</div>
     <div v-for="point in list" :id="point.code" :key="point.code" class="point" v-show="show"></div>
   </div>
 </template>

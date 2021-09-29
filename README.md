@@ -1,11 +1,9 @@
-# Vue 3 + Typescript + Vite
+# 使用 Web Animation API 模拟有趣的小球碰撞效果
 
-This template should help get you started developing with Vue 3 and Typescript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+用原生 JS 创造会移动、碰撞的物理小球！
 
-## Recommended IDE Setup
+实现要点：
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
-
-## Type Support For `.vue` Imports in TS
-
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
+- 碰撞检测机制
+- 如何将高中物理公式运用到代码中
+- 使用 Math 库时要注意值的正负性，尤其是 +0 和 -0 可能造成的影响，以及对近似于 0 的浮点数进行归 0
